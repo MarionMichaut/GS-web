@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+		<!-- Pour planning -->
+		<link href='http://fullcalendar.io/js/fullcalendar-2.6.1/fullcalendar.css' rel='stylesheet' />
+		<link href='http://fullcalendar.io/js/fullcalendar-2.6.1/fullcalendar.print.css' rel='stylesheet' media='print' />
+
+		<link rel="stylesheet" href="CSS/planning.css">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="IMG/LogoGymRVB.JPG" alt="" /></span>
+							<h1 id="title">Nom du gymnaste</h1>
+							<p>Sa fonction ...</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#Planning" id="Accueil-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Accueil</span></a></li>
+								<li><a href="#Planning" id="Planning-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar-o">Planning</span></a></li>
+								<li><a href="#ZonesGeo" id="ZonesGeo-link" class="skel-layers-ignoreHref"><span class="icon fa-map-marker">Zones Géographiques</span></a></li>
+								<li><a href="#PlanGlob" id="PlanGlob-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Planning global</span></a></li>
+								<li><a href="#Semtype" id="Semtype-link" class="skel-layers-ignoreHref"><span class="icon fa-star-o">Semaines Types</span></a></li>
+								
+								<li><a href="#Infos" id="Infos-link" class="skel-layers-ignoreHref"><span class="icon fa-info-circle">Mes infos</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Planning ou Accueil -->
+					<section id="Planning" class="one dark cover">
+						<div class="container">
+							<header>
+								<h2>Planning</h2>
+							</header>
+							<div id="planning">
+								<div id='calendar'></div>
+							</div>
+						</div>
+					</section>
+
+				<!-- ZonesGeo -->
+					<section id="ZonesGeo" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Zones Géographiques</h2>
+							</header>
+
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+							fusce hendrerit lacus ridiculus.</p>
+						</div>
+					</section>
+
+				<!-- Planning global -->
+					<section id="PlanGlob" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Planning global</h2>
+							</header>
+
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+							ornare iaculis.</p>
+
+						</div>
+					</section>
+
+					<!-- Semaines Types -->
+					<section id="Semtype" class="five">
+						<div class="container">
+
+							<header>
+								<h2>Semaines Types</h2>
+							</header>
+
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+							ornare iaculis.</p>
+
+						</div>
+					</section>
+
+
+				<!-- Contact -->
+					<section id="Infos" class="six">
+						<div class="container">
+
+							<header>
+								<h2>Mes infos</h2>
+							</header>
+
+							<form name="infoIntervenant">
+								Identifiant : <input type="text" value="trucmuche" readonly></input>
+								Nom :<input type="text" required/>
+								Prénom :<input type="text" required/>
+								Téléphone :<input type="text" required/>
+								Adresse mail :<input type="email" required/>
+								Commentaire :<input type="text" placeholder="Ajouter un commentaire"></input></br>
+
+								<input type="submit" value="Valider" class="button"></input>
+								<input type="reset" value="Annuler" class="button"></input>
+
+							</form>
+
+							<br/><a type="reset"class="button">Modifier mot de passe</a>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="planning.js"></script>
+
+			<!-- Pour planning -->
+			<script src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js'></script>
+			<script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+			<!-- <script src='http://fullcalendar.io/js/fullcalendar-2.6.1/fullcalendar.js'></script> -->
+			<script src="fullcalendar/fullcalendar.js"></script>
+			<script src="fullcalendar/lang/fr.js"></script>
+
+	</body>
+</html>
